@@ -1,0 +1,18 @@
+# Use Google style as the default style.
+BasedOnStyle: Google
+IndentWidth: 3
+
+AllowAllArgumentsOnNextLine: true
+AllowAllParametersOfDeclarationOnNextLine: true 
+BinPackArguments: false
+BinPackParameters: false
+AllowShortFunctionsOnASingleLine: Empty
+
+BreakBeforeBraces: Allman
+
+AllowShortIfStatementsOnASingleLine: true
+BreakInheritanceList: BeforeComma
+BreakConstructorInitializers: BeforeComma
+
+AccessModifierOffset: -3
+
