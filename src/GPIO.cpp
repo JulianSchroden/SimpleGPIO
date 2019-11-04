@@ -1,8 +1,8 @@
-#include "SimpleGPIO.h"
-
 #include <Arduino.h>
+#include <SimpleGPIO/GPIO.h>
 
-
+namespace SimpleGPIO
+{
 GPIO::GPIO(uint8_t pin) : pin_(pin) {}
 
 uint8_t GPIO::pin()
@@ -108,3 +108,5 @@ DigitalPinState pinStateArduinoToGeneric(bool value)
    else
       return DigitalPinState::Low;
 }
+
+}  // namespace SimpleGPIO

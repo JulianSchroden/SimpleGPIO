@@ -1,9 +1,11 @@
-#ifndef _SIMPLE_GPIO_h
-#define _SIMPLE_GPIO_h
+#ifndef _SIMPLE_GPIO_GPIO_h
+#define _SIMPLE_GPIO_GPIO_h
 
 #include <cstdint>
 #include <functional>
 
+namespace SimpleGPIO
+{
 enum class PinEvent
 {
    Fall,
@@ -139,4 +141,5 @@ private:
 int digitalInputModeGenericToArduino(DigitalInputMode inputMode);
 DigitalPinState pinStateArduinoToGeneric(bool value);
 
+}  // namespace SimpleGPIO
 #endif
